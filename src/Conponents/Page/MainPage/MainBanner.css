@@ -1,0 +1,45 @@
+/* eslint-disable */
+.overlay {
+  width: 100%;
+  height: 98vh;
+  background: url("../../img/16.png");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.bannerContainer {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: url(../../img/bg04.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerContainer a:hover {
+  background-color: #a8411f;
+}
+.bannerContainer h1 {
+  color: rgb(250, 246, 246);
+  text-shadow: 2px 2px 5px rgba(19, 19, 20, 0.4352941176);
+  z-index: 10;
+  margin-top: 3rem;
+}
+
+.button01 {
+  height: 46px;
+  background-color: #EA5421;
+  color: rgb(250, 246, 246);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0 20px 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.062em;
+  z-index: 10;
+}/*# sourceMappingURL=MainBanner.css.map */

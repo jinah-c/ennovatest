@@ -1,0 +1,318 @@
+/* eslint-disable */
+@import '../Variables.scss';
+
+.mainContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+// ABOUT ENNOVA
+// ABOUT ENNOVA
+// ABOUT ENNOVA
+// ABOUT ENNOVA
+
+.aboutEnnovaSection{
+    width: 100%;
+    background-color: #F8F9FA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutEnnovaContainer{
+    
+    max-width: 1400px;
+    height:70vh;
+    padding: 0 4rem;
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+
+    .deco{
+        width: 68px;
+        height: 2px;
+        background-color:$primary;
+        margin: 1rem 0 2rem;
+    }
+
+    p{
+        line-height: 1.65rem;
+        color: #646466;
+        max-width: 560px;
+        word-break: keep-all;
+    }
+}
+
+
+.aboutEnnovaText{
+    width: 100%;
+    // max-width: 640px;
+}
+
+.aboutEnnovaIMG{
+    width: 100%;
+    // max-width: 640px;
+    height: auto;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+// FINANCIAL PLATFORM
+// FINANCIAL PLATFORM
+// FINANCIAL PLATFORM
+// FINANCIAL PLATFORM
+
+
+
+
+
+.aboutFinancialContainer{
+    width: 100%;
+    min-height:76vh;
+    background-color: #ffffff;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    
+    .deco{
+        width: 68px;
+        height: 2px;
+        background-color:$primary;
+        margin: 1rem 0 2rem;
+    }
+}
+
+
+.aboutFinancialText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+
+    p{
+        line-height: 1.65rem;
+        color: #646466;
+        max-width: 750px;
+        word-break: keep-all;
+    }
+}
+
+.blurHoverSection{
+    max-width:1400px;
+    height: 28vh;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.5rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.blurHoverBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.blurImg{
+    width: 100%;
+    min-width: 150px;
+    height:100%;
+    object-fit: contain;
+    overflow: hidden;
+    object-position:center;
+    transition: all 0.3s ease-in-out; 
+    
+}
+
+.blurHovertext{
+    position: absolute;
+    display: block;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; 
+}
+
+.blurHoverBox:hover .blurImg{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-filter: grayscale(80%) blur(50px);
+    filter: grayscale(80%) blur(18px);
+}
+
+.blurHoverBox:hover .blurHovertext{
+    opacity: 1;
+}
+
+
+
+
+
+
+// Service & Application
+// Service & Application
+// Service & Application
+// Service & Application
+
+.ServiceApplicationCardSection{
+    width: 100%;
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem 2rem;
+    
+}
+
+    .ServiceApplicationContainer{
+        width: 1400px;
+        min-height:76vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3.4rem;
+        align-items: center;
+        justify-content: center;
+    
+    
+        .deco{
+            width: 68px;
+            height: 2px;
+            background-color:$primary;
+            margin: 1rem 0 2rem;
+        }
+
+        .ServiceApplicationText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        p{
+            line-height: 1.65rem;
+            color: #646466;
+            max-width: 750px;
+            word-break: keep-all;
+        }
+    
+    }
+
+    .ServiceApplicationCard{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        .bottomDeco{
+            width:100%;
+            height: 10px;
+            background-color: $primary;
+            display:none;
+            position: absolute;
+            bottom: 0;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        .cardBox:hover{
+            transform: translateY(-16px);
+            transition: all 0.2s ease-in-out; 
+            box-shadow: 5px 10px 10px #4e261416;
+            transition-delay: 0;
+        }
+
+        .cardBox:hover .bottomDeco{
+            display:block;
+        }
+    }
+
+    .cardBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 320px;
+
+        background: #FFFFFF padding-box;
+        border-radius: 1rem;
+
+        padding: 2rem;
+        box-shadow: 5px 5px 5px #bcbcbc0d;
+
+        .cardIcon{
+            width: 70px;
+            margin-bottom: 2rem;
+        }
+
+        .cardTextBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            h4{
+                font-size: 15px;
+                margin-bottom: 0.6rem;
+            }
+
+            p{
+                font-size:14px;
+            }
+        }
+    }
+
+    .button02{
+        height: 38px;
+        background-color: #fff;
+        color: $primary;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        border-radius: 0.4rem;
+        padding: 0 16px 0;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.062em;
+        z-index: 10;
+        border: 1px solid #EA5421;
+        margin-top: 1.2rem;
+
+      }
+      a:hover{
+        background-color: $primary;
+        color:#fff;
+        
+    }
+    }
+
+
+   

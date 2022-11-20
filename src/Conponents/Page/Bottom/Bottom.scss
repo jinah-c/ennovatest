@@ -1,0 +1,38 @@
+/* eslint-disable */
+@import '../Variables.scss';
+
+.bottomContainer{
+    width: 100%;
+    min-height: 160px;
+    background-color:#343A40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+
+    p{
+        font-size: 13px;
+        color: #FFFFFF;
+        opacity: 1;
+        line-height: 1.28rem;
+    }
+}
+
+.bottomContentBox{
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    p:first-child{
+        opacity: 0.5;
+    }
+    
+    .bottomContents{
+        min-height:60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

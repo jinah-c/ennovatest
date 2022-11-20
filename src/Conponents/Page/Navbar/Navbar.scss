@@ -1,0 +1,67 @@
+/* eslint-disable */
+@import '../Variables.scss';
+
+
+.Nav_Nav{
+    width: 100%;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 1rem;
+    z-index: 10;
+    position: fixed;
+
+    background-color: rgba(255, 255, 255, 0.966);
+    box-shadow: 2px 5px 10px #5c5c5c0a;
+
+}
+
+.Nev_Logo{
+    display: flex;
+    align-items: flex-start;
+
+    img{
+        width: 164px;
+    }
+
+}
+
+.Nav_Link{
+
+    a{
+        text-decoration: none;
+        margin: 12px;
+        font-size: 14px;
+        letter-spacing: 0.062em;
+        // text-transform : uppercase; 
+        color: black;
+        opacity: 0.8;
+    }
+
+    a:hover{
+        color: $primary;
+    }
+}
+
+
+.Nav_Language{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: auto;
+
+    .Lan_Img{
+        width: 36px;
+        height: 36px;
+    }
+
+    p{
+      margin-left: 4px;  
+      font-size: 14px;
+      color: black;
+      opacity: 0.8;
+    }
+}

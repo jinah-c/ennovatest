@@ -1,0 +1,250 @@
+/* eslint-disable */
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutEnnovaSection {
+  width: 100%;
+  background-color: #F8F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutEnnovaContainer {
+  max-width: 1400px;
+  height: 70vh;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+.aboutEnnovaContainer .deco {
+  width: 68px;
+  height: 2px;
+  background-color: #EA5421;
+  margin: 1rem 0 2rem;
+}
+.aboutEnnovaContainer p {
+  line-height: 1.65rem;
+  color: #646466;
+  max-width: 560px;
+  word-break: keep-all;
+}
+
+.aboutEnnovaText {
+  width: 100%;
+}
+
+.aboutEnnovaIMG {
+  width: 100%;
+  height: auto;
+}
+.aboutEnnovaIMG img {
+  width: 100%;
+}
+
+.aboutFinancialContainer {
+  width: 100%;
+  min-height: 76vh;
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.aboutFinancialContainer .deco {
+  width: 68px;
+  height: 2px;
+  background-color: #EA5421;
+  margin: 1rem 0 2rem;
+}
+
+.aboutFinancialText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+}
+.aboutFinancialText p {
+  line-height: 1.65rem;
+  color: #646466;
+  max-width: 750px;
+  word-break: keep-all;
+}
+
+.blurHoverSection {
+  max-width: 1400px;
+  height: 28vh;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.5rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.blurHoverBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blurImg {
+  width: 100%;
+  min-width: 150px;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.blurHovertext {
+  position: absolute;
+  display: block;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.blurHoverBox:hover .blurImg {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-filter: grayscale(80%) blur(50px);
+  filter: grayscale(80%) blur(18px);
+}
+
+.blurHoverBox:hover .blurHovertext {
+  opacity: 1;
+}
+
+.ServiceApplicationCardSection {
+  width: 100%;
+  background-color: #F8F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem 2rem;
+}
+
+.ServiceApplicationContainer {
+  width: 1400px;
+  min-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.ServiceApplicationContainer .deco {
+  width: 68px;
+  height: 2px;
+  background-color: #EA5421;
+  margin: 1rem 0 2rem;
+}
+.ServiceApplicationContainer .ServiceApplicationText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ServiceApplicationContainer .ServiceApplicationText p {
+  line-height: 1.65rem;
+  color: #646466;
+  max-width: 750px;
+  word-break: keep-all;
+}
+.ServiceApplicationContainer .ServiceApplicationCard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.ServiceApplicationContainer .ServiceApplicationCard .bottomDeco {
+  width: 100%;
+  height: 10px;
+  background-color: #EA5421;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 1rem 1rem;
+}
+.ServiceApplicationContainer .ServiceApplicationCard .cardBox:hover {
+  transform: translateY(-16px);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 10px 10px rgba(78, 38, 20, 0.0862745098);
+  transition-delay: 0;
+}
+.ServiceApplicationContainer .ServiceApplicationCard .cardBox:hover .bottomDeco {
+  display: block;
+}
+.ServiceApplicationContainer .cardBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background: #FFFFFF padding-box;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 5px 5px 5px rgba(188, 188, 188, 0.0509803922);
+}
+.ServiceApplicationContainer .cardBox .cardIcon {
+  width: 70px;
+  margin-bottom: 2rem;
+}
+.ServiceApplicationContainer .cardBox .cardTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ServiceApplicationContainer .cardBox .cardTextBox h4 {
+  font-size: 15px;
+  margin-bottom: 0.6rem;
+}
+.ServiceApplicationContainer .cardBox .cardTextBox p {
+  font-size: 14px;
+}
+.ServiceApplicationContainer .button02 {
+  height: 38px;
+  background-color: #fff;
+  color: #EA5421;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  border-radius: 0.4rem;
+  padding: 0 16px 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.062em;
+  z-index: 10;
+  border: 1px solid #EA5421;
+  margin-top: 1.2rem;
+}
+.ServiceApplicationContainer a:hover {
+  background-color: #EA5421;
+  color: #fff;
+}/*# sourceMappingURL=MainPage.css.map */
